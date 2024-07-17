@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+CU:wght@100..400&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: black;
+}
+.container {
+    background-color: #fff;
+    padding: 2em;
+    border-radius: 0.5em;
+    box-shadow: 0 0.5em 1em rgba(0, 0, 0, 0.1);
+    /* width: 400px; */
+    display: flex;
+
+}
+#signup-text{
+    margin-inline-start: 70px;
+    max-width: 200px;
+}
+#signup-text>q{
+    font-size: 2rem;  font-family: "Playwrite CU"; font-weight: bolder; 
+}
+h2 {
+    margin-bottom: 1em;
+    color: #333;
+    text-align: center;
+}
+label {
+    display: block;
+    margin-bottom: 0.5em;
+    color: #333;
+    font-weight: 600;
+}
+input {
+    width: 100%;
+    padding: 0.8em;
+    margin-bottom: 1em;
+    border: 1px solid #ccc;
+    border-radius: 0.3em;
+}
+input:focus {
+    border-color: black;
+    outline: none;
+}
+button {
+    width: 100%;
+    padding: 0.8em;
+    border: none;
+    border-radius: 0.3em;
+    background-color: black;
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+}
+button:hover {
+    background-color: black;
+}
+.error {
+    color: red;
+    margin-top: 1em;
+    text-align: center;
+}
+
+
+/* Media Queries for Responsive Design */
+@media only screen and (max-width: 768px) {
+    .container {
+        padding: 1em; /* Adjust padding for smaller screens */
+    }
+    h2{
+        margin: 0;
+    }
+
+    input {
+        margin-bottom: 0.5em; /* Reduce bottom margin for inputs */
+    }
+
+    button {
+        margin-bottom: 0.5em; /* Reduce bottom margin for button */
+    }
+
+    #signup-text {
+        margin-inline-start: 20px; /* Adjust margin for signup text */
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .container {
+        max-width: 300px; /* Further reduce max-width for smaller screens */
+    }
+    h2{
+        margin: 0;
+    }
+}
